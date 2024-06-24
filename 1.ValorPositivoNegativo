@@ -1,0 +1,14 @@
+program ValorPositivoNegativo;
+
+var
+  numero: integer;
+
+begin
+  write('Digite um valor: ');
+  readln(numero);
+
+  if numero > 0 then
+    writeln(numero, ' é positivo')
+  else
+    writeln(numero, ' é negativo')
+end.
