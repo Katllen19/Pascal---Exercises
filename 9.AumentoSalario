@@ -1,0 +1,20 @@
+program AumentoSalario;
+
+var
+    idade: integer;
+    salario, salarioComAumento: real;
+
+begin
+    writeln('Digite sua idade: ');
+    readln(idade);
+
+    if idade >= 18 then
+        writeln('Digite seu salário: ');
+        readln(salario);
+
+        salarioComAumento := salario * 1.05;
+
+        writeln('Novo salário com aumento de 5%: ', salarioComAumento:0:2);
+    else
+        writeln('Cálculo não permitido. Menor de idade.');
+end.
