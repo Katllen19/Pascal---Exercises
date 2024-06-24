@@ -1,0 +1,14 @@
+program idadePermissao;
+
+var
+  idade: integer;
+
+begin
+  write('Digite sua idade: ');
+  readln(idade);
+
+  if idade >= 18 then
+    writeln('Entrada permitida')
+  else
+    writeln('Entrada negada')
+end.
