@@ -1,0 +1,14 @@
+program sexoPessoa;
+
+var
+    sexo: char;
+
+begin
+    writeln('Digite seu sexo: ');
+    readln(sexo);
+
+    if sexo = 'F' then
+        writeln('Seu sexo é feminino.')
+    else
+    writeln('Seu sexo é masculino.')
+end.
