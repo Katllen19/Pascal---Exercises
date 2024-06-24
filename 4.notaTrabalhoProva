@@ -1,0 +1,19 @@
+program notaTrabalhoProva;
+
+var
+  trabalho, prova, media: integer;
+
+begin
+  write('Digite a nota do trabalho (0 - 100): ');
+  readln(trabalho);
+  
+  write('Digite a nota da prova (0 - 100): ');
+  readln(prova);
+  
+  media := trabalho + prova;
+
+  if media >= 60 then
+    writeln('Aprovado')
+  else
+    writeln('Reprovado')
+end.
