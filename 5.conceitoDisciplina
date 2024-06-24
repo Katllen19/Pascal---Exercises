@@ -1,0 +1,14 @@
+Program conceitoDisciplina;
+
+var
+    conceito: char;
+
+begin
+  writeln('Digite o conceito do aluno: ');
+  readln(conceito);
+  
+  if (conceito = 'A') or (conceito = 'B') or (conceito = 'C') then
+    writeln('Aprovado')
+  else
+    writeln('Reprovado')
+end.
