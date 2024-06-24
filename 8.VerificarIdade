@@ -1,0 +1,17 @@
+program VerificarIdade;
+
+var
+    idade: integer;
+    nome: string;
+
+begin
+    writeln('Digite sua idade: ');
+    readln(idade);
+
+    if idade >= 18 then
+        writeln('Digite seu nome: ');
+        readln(nome);
+        writeln('Bem vindo, ', nome);
+    else
+        writeln('Entrada não permitida.');
+end.
