@@ -1,0 +1,14 @@
+program VerificarIntervalo;
+
+var
+    numero: integer;
+
+begin
+    writeln('Digite um número inteiro: ');
+    readln(numero);
+
+    if (numero > 0) and (numero < 100) then
+        writeln('Número no intervalo definido')
+    else
+        writeln('Número fora do intervalo!');
+end.
