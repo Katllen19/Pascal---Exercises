@@ -1,0 +1,17 @@
+program salarioUsuario;
+
+var
+    salario, calcSalario: real;
+
+begin
+    writeln('Digite seu salário: ');
+    readln(salario);
+
+    if salario < 1640 then
+        writeln('Você recebe menos que um salário mínimo')
+    else
+    begin
+        calcSalario := salario / 1640;
+        writeln('Você recebe ', calcSalario:0:2, ' salário(s) mínimo(s)');
+    end;
+end.
