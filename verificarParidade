@@ -1,0 +1,14 @@
+program verificarParidade;
+
+var
+  numero: integer;
+
+begin
+  write('Digite um número: ');
+  readln(numero);
+
+  if numero mod 2 = 0 then
+    writeln(numero, ' é um número par.')
+  else
+    writeln(numero, ' é um número ímpar.')
+end.
