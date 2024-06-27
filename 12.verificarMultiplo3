@@ -1,0 +1,15 @@
+program verificarMultiplo3;
+
+var
+  numero: integer;
+
+begin
+  write('Digite um número: ');
+  readln(numero);
+
+  if numero mod 3 = 0 then
+    writeln(numero, ' é um múltiplo de 3.')
+  else
+    writeln(numero, ' não é um múltiplo de 3.')
+  end;
+end.
