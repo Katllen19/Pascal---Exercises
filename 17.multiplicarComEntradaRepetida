@@ -1,0 +1,19 @@
+program multiplicarComEntradaRepetida;
+
+var
+  numero,resultado: integer;
+
+begin
+  repeat
+    write('Digite um número inteiro: ');
+    readln(numero);
+
+    if numero < 0 then
+      writeln('Número negativo. Digite novamente.')
+    else
+      break;
+  until numero >= 0;
+
+  resultado := numero * 10;
+  writeln('Resultado:', resultado);
+end.
