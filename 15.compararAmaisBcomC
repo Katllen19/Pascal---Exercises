@@ -1,0 +1,20 @@
+program compararAmaisBcomC;
+
+var
+  a, b, c: integer;
+
+begin
+  write('Digite o valor de A: ');
+  readln(a);
+
+  write('Digite o valor de B: ');
+  readln(b);
+
+  write('Digite o valor de C: ');
+  readln(c);
+
+  if a + b > c then
+    writeln('A+B é maior que C.')
+  else
+    writeln('C é maior que todos!')
+end.
