@@ -1,0 +1,30 @@
+program jogoAdivinhacaoPersonalizado;
+
+var
+  x, y, numeroAleatorio, numeroDigitado: integer;
+
+begin
+  Randomize;
+
+  write('Digite o valor mínimo (X): ');
+  readln(x);
+
+  write('Digite o valor máximo (Y): ');
+  readln(y);
+
+  if x > y then
+  begin
+    writeln('Valor mínimo deve ser menor que o valor máximo.');
+    break;
+  end;
+
+  write('Digite um número entre ', x, ' e ', y, ': ');
+  readln(numeroDigitado);
+
+  numeroAleatorio := RandomRange(x, y);
+
+  if numeroAleatorio = numeroDigitado then
+    writeln('Parabéns! Você acertou!')
+  else
+    writeln('Errou! O número era ', numeroAleatorio)
+end.
