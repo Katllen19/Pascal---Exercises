@@ -1,0 +1,17 @@
+program parImparSomaMultiplicacao;
+
+var
+  numero, resultado: integer;
+
+begin
+  write('Digite um número inteiro: ');
+  readln(numero);
+
+  if numero mod 2 = 0 then  
+    resultado := numero + 5; 
+  else
+    resultado := numero * 2;
+
+  writeln('Resultado:', resultado);
+  
+end.
