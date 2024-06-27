@@ -1,0 +1,22 @@
+program analisarNumeroInteiro;
+
+var
+  numero: integer;
+
+begin
+  write('Digite um número inteiro: ');
+  readln(numero);
+
+  if numero > 0 then
+  begin
+    if numero mod 2 = 0 then
+      writeln(numero, ' é um número par.')
+    else
+      writeln(numero, ' é um número ímpar.')
+  end
+  else
+  begin
+    numero := numero + 100;
+    writeln('Número negativo. Novo valor:', numero)
+  end;
+end.
