@@ -1,0 +1,18 @@
+program jogoAdivinhacao;
+
+var
+  numeroAleatorio, numeroDigitado: integer;
+
+begin
+  Randomize;
+
+  numeroAleatorio := Random(10) + 1;
+
+  write('Digite um número entre 1 e 10: ');
+  readln(numeroDigitado);
+
+  if numeroAleatorio = numeroDigitado then
+    writeln('Parabéns! Você acertou!')
+  else
+    writeln('Errou! O número era ', numeroAleatorio)
+end.
