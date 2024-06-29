@@ -1,0 +1,24 @@
+program descontoCompra;
+
+var
+  valorCompra, valorDesconto, valorFinal: real;
+
+const
+  taxaDesconto: real = 0.1;
+  valorMinimoDesconto: real = 100.0;
+
+begin
+  write('Digite o valor da compra: R$');
+  readln(valorCompra);
+
+  if valorCompra >= valorMinimoDesconto then
+  begin
+    valorDesconto := valorCompra * taxaDesconto;
+    valorFinal := valorCompra - valorDesconto;
+
+    writeln('Valor do desconto:', valorDesconto:4:2);
+    writeln('Valor final da compra:', valorFinal:4:2);
+  end
+  else
+    writeln('Compra não atingiu o valor mínimo para desconto.');
+end.
